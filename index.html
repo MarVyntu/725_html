@@ -1,16 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-    <h1>Hello HTML</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glory to Ukraine</title>
+    <link rel="shortcut icon" href="./img/logoM8.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+  <body>
+    <style>
+      body {
+        font-family: Montserrat;
+        background-color: #e5e5e5;
+      }
 
-    <img width="300" src="img/IMG_7430.JPG" alt="snake">
+      .main {
+        width: 91%;
+        flex-direction: row-reverse;
+        margin: 2em auto;
+        box-shadow: 0.3em 0.3em 1.25em rgba(0, 0, 0, 0.1);
+      }
 
-</body>
+      .title8 {
+        text-transform: uppercase;
+        color: rgb(248, 109, 45);
+        position: absolute;
+        margin-left: 2em;
+        margin-top: 4em;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      * a {
+        text-decoration: none;
+      }
+.backgroundImg {
+    width: 100%;
+}
+      .nav {
+        display: inline;
+        width: 75%;
+        position: absolute;
+        left: 5.5em;
+      }
+
+      .nav ul {
+        height: 2.5em;
+        list-style: none;
+        margin: 0;
+        display: flex;
+        padding: 0 1em;
+      }
+
+      .nav ul li {
+        transition: all 0.5s ease-out;
+        margin-right: 2.5em;
+        padding: 0.5em 0.5em;
+        border-top: 3px solid rgb(248, 109, 45);
+      }
+
+      .nav ul li a {
+        color: rgb(248, 109, 45);
+        padding: 0.5em 0.5em;
+      }
+
+      .nav ul li:hover {
+        transition: all 1s ease-out;
+        background: rgba(248, 109, 45, 0.4);
+        border-radius: 2em;
+        padding: 0.8em 0.5em;
+      }
+
+      .nav ul li a:hover {
+        transition: all 0.5s ease-out;
+        color: #e5e5e5;
+        text-shadow: 1px 3px 5px #031437;
+      }
+
+      .nav6 {
+        transition: all 0.5s ease-out;
+        display: inline-block;
+        cursor: pointer;
+        border: none;
+        margin-left: 65em;
+        margin-top: -1em;
+        border-radius: 50%;
+        box-shadow: -1px -1px 3px #e5e5e5;
+      }
+
+      .nav6:hover {
+        transition: all 1s ease-out;
+        box-shadow: -1px -1px 3px rgb(248, 109, 45);
+      }
+
+      img.rotation:hover {
+        animation: 1s linear 0s normal none infinite running rot;
+        -webkit-animation: 3s linear 0s normal none infinite running rot;
+        width: 100px;
+      }
+      @keyframes rot {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      @-webkit-keyframes rot {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .title7 {
+        text-align: center;
+      }
+
+
+.paragraf {
+    margin: 0.5em 2em;
+}
+
+
+      .footer {
+  list-style: none;
+  display: flex;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid darkblue;
+}
+
+.footer {
+  width: 100%;
+  background: rgb(2, 21, 55);
+
+}
+
+.footer ul {
+  margin-top: 1rem;
+  margin-left: 11rem;
+  margin-right: 35%;
+  margin-bottom: 0.5rem; 
+  width: 95%;
+  list-style: none;
+  display: flex;
+}
+
+.footer ul li {
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+
+.icon_phone {
+  width: 12px;
+  height: 12px;
+  background-image: url(./img/cell08.png);
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  display: inline-block;
+}
+.icon_phone:hover {
+  background-position: left top -12px;
+  cursor: pointer;
+}
+
+.icon_mail {
+  width: 12px;
+  height: 10px;
+  background-image: url(./img/mail08.png);
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  display: inline-block;
+}
+.icon_mail:hover {
+  background-position: left top -10px;
+  cursor: pointer;
+}
+
+.icon_github {
+  width: 12px;
+  height: 12px;
+  background-image: url(./img/github08.png);
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  display: inline-block;
+}
+.icon_github:hover {
+  background-position: left top -12px;
+  cursor: pointer;
+}
+
+.icon_telegram {
+  width: 12px;
+  height: 10px;
+  background-image: url(./img/tel08.png);
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  display: inline-block;
+}
+.icon_telegram:hover {
+  background-position: left top -10px;
+  cursor: pointer;
+}
+    </style>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="html5.html">HTML5</a></li>
+        <li><a href="css3.html">CSS3</a></li>
+        <li><a href="javascript.html">JavaScript</a></li>
+      </ul>
+      <p class="nav6">
+        <a class="nav8" href="index.html"
+          ><img
+            class="rotation"
+            src="img/logoM8.png"
+            alt="logo"
+            style="width: 3em"
+            title="Home"
+        /></a>
+      </p>
+    </nav>
+    <div class="main">
+      <h1 class="title8">Glory to Ukraine</h1>
+      <img class="backgroundImg" src="img/background08.png" alt="back" />
+      <h1 class="title7">Lorem ipsum dolor sit amet.</h1>
+      <p class="paragraf">
+        &nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+        fugit et est iste deserunt. Dolore tenetur maiores harum iusto dolorum
+        in consectetur corporis temporibus odit. Consequatur id nisi assumenda
+        odit neque molestiae sint exercitationem perferendis, saepe, repellendus
+        doloremque nemo ut iste laborum eius asperiores doloribus! Doloremque
+        minus quis perspiciatis ducimus?
+      </p>
+      <h3 class="paragraf">Lorem, ipsum dolor.</h3>
+      <p class="paragraf">  &nbsp;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi amet nemo, fugiat et, dolorem sapiente harum nam debitis cumque odio similique exercitationem vel doloremque aspernatur hic natus nihil magni omnis. Quos, excepturi necessitatibus voluptas maxime enim vero sapiente minima fuga. Molestias ipsam praesentium cumque repellendus, architecto enim dicta vel quibusdam obcaecati voluptatem? Veniam, debitis voluptatem? Dolorum, nam. Mollitia, officia illo aut, nisi nulla odit ex tenetur commodi laborum ipsa consectetur inventore quod consequuntur voluptatum veritatis cumque hic nemo earum recusandae ratione repudiandae nostrum, tempora sapiente suscipit. Ipsum fugit dolore et? Facilis, quas. Qui neque quidem recusandae magni fugiat earum sit!</p>
+      <hr color="red" noshade width="600px">
+      <footer class="footer">
+        <div class="contacts">
+          <ul>
+       <li>
+          <a class="contact_phone" href="tel:+380677448888">
+            <span class="icon_phone"></span>
+        </li>
+
+        <li>
+          <a class="contakt_mail" href="mailto:mar.vyntu@gmail.com">
+            <span class="icon_mail"></span>
+        </li>
+
+        <li>
+          <a class="links1" href="https://github.com/MarVyntu">
+            <span class="icon_github"></span>
+
+           <li>
+          <a class="links1" href="https://t.me/Art88M">
+            <span class="icon_telegram"></span>
+           </li>
+        </ul>
+        </div>
+
+      
+      </footer>
+    </div>
+  </body>
 </html>
