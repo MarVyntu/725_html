@@ -130,34 +130,28 @@
     margin: 0.5em 2em;
 }
 
-
-      .footer {
-  list-style: none;
-  display: flex;
-  margin-top: 0.8rem;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid darkblue;
+table td {
+    border: 1px solid rgb(2, 21, 55);
 }
 
 .footer {
+  display: flex;
   width: 100%;
   background: rgb(2, 21, 55);
-
 }
 
 .footer ul {
-  margin-top: 1rem;
-  margin-left: 9.3rem;
-  /* margin-right: 35%; */
-  margin-bottom: 0.5rem; 
-  width: 95%;
-  list-style: none;
   display: flex;
+  position: relative;  
+  margin-top: 1rem;
+  margin-left: 21vw;
+  margin-right: auto;
+  margin-bottom: 1rem;   
+  list-style: none; 
 }
 
-.footer ul li {
-    margin-left: 40%;
-    margin-right: 40%;
+.footer ul li { 
+    margin-right: 10rem;
 }
 
 
@@ -231,7 +225,7 @@
         /></a>
       </p>
     </nav>
-  </header>
+</header>
     <div class="main">
       <h1 class="title8">Glory to Ukraine</h1>
       <img class="backgroundImg" src="img/background08.png" alt="back" />
@@ -292,7 +286,7 @@
           <figure>
           <img src="img/army43-44.jpg" alt="army" width="100%"/>
           <figcaption>
-            Це зображення через теги figure і figcaption 
+            This image is via tags figure and figcaption 
           </figcaption> 
           </figure>
         </div>
@@ -303,13 +297,13 @@
             <source media="(min-width: 900px)" srcset="https://source.unsplash.com/random/400x400">
             <source media="(min-width: 500px)" srcset="https://source.unsplash.com/random/100x100">
             <img src="https://source.unsplash.com/random/200x200" alt="/"/>
-            <h4>Це зображення через теги picture і source  </h4>
+            <h4>This image is via tags picture and source  </h4>
           </picture>
          
         </div>
 
         <div>
-            <label >Чекбокс, вибір декількох позицій</label>
+            <label >Checkbox</label>
             <input type="checkbox" name="klm"> 1
             <input type="checkbox" name="klm"> 2
             <input type="checkbox" name="klm"> 3
@@ -317,7 +311,7 @@
           </div>
 <br />
           <div>
-            <label >Радіо, вибір однієї позиції</label>
+            <label >Radio</label>
             <input type="radio" name="abc"> 1
             <input type="radio" name="abc"> 2
             <input type="radio" name="abc"> 5
@@ -326,11 +320,11 @@
           <br />
 
           <div  class="sex10">
-            <label for="sex10">Ваша стать</label>
+            <label for="sex10">Your gender</label>
             <select id="sex10">
-              <option value="man">чоловік</option>
-              <option value="">жінка</option>
-              <option value="" selected>невизначився</option>
+              <option value="man">Man</option>
+              <option value="">Woman</option>
+              <option value="" selected>Undecided</option>
             </select>
           </div>
 
@@ -338,60 +332,60 @@
 
             <form  action="">
               <div  >
-              <label for="text02">Текст</label>
-              <input type="text" id="text02" value=" текст за замовчуванням " >
+              <label for="text02">Text</label>
+              <input type="text" id="text02" value="default text" >
             </div>
             <br />
 
             <div  >
-              <label for="text02a"> Незмінний текст </label>
-              <input type="text" id="text02a" value="текст з readonly" readonly>
+              <label for="text02a"> Fixed text</label>
+              <input type="text" id="text02a" value="text from readonly" readonly>
             </div>
           <br />
 
           
             <div >
-              <label for="email03">Пошта</label>
+              <label for="email03">Email</label>
               <input type="email" id="email03" placeholder="mix@gmail.com ">
             </div>
           <br />
 
             <div>
-              <label for="pas04">Пароль</label>
+              <label for="pas04">Password</label>
               <input type="password" id="pas04" >
             </div>
           <br />
 
             <div >
-              <label for="num05">Числа</label>
+              <label for="num05">Number</label>
               <input type="number" id="num05"  min="0"  max="18">
             </div>
             <br />
 
             <div >
-              <label for="range06">Діапазон</label>
+              <label for="range06">Range</label>
               <input type="range" id="range06"  min="0"  max="10"  step="2" >
             </div>
           <br />
 
             <div  >
-              <label for="date07">Дата</label>
+              <label for="date07">Date</label>
               <input type="date" id="date07" >
             </div>
           <br />
 
             <div >
-              <label for="color08">Колір</label>
+              <label for="color08">Color</label>
               <input type="color" id="color08" >
             </div>
           <br />
 
             <div  class="message09css">
-              <label for="message09">message</label>
+              <label for="message09">Message</label>
               <textarea name="" id="message09" cols="30" rows="5"></textarea>
             </div>
             <br />
-<h3>Таблиця</h3>
+<h3>Table</h3>
             <table class="table" >                
                 <thead>
                 <tr>
@@ -424,7 +418,7 @@
             </tr>             
           </tbody>
               </table>
-<hr />
+<hr>
               <a href="#" title="up" class="topbutton"><button> up to start</button></a>
       </div>
       
