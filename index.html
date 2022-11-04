@@ -39,9 +39,10 @@
       * a {
         text-decoration: none;
       }
-.backgroundImg {
-    width: 100%;
-}
+
+    .backgroundImg {
+        width: 100%;
+    }
       .nav {
         display: inline;
         width: 75%;
@@ -92,7 +93,7 @@
         border-radius: 50%;
         box-shadow: -1px -1px 3px #e5e5e5;
       }
-
+     
       .nav6:hover {
         transition: all 1s ease-out;
         box-shadow: -1px -1px 3px rgb(248, 109, 45);
@@ -124,7 +125,8 @@
       }
 
 
-.paragraf {
+.paragraf, 
+.fichhtml{
     margin: 0.5em 2em;
 }
 
@@ -243,6 +245,178 @@
       </p>
       <h3 class="paragraf">Lorem, ipsum dolor.</h3>
       <p class="paragraf">  &nbsp;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi amet nemo, fugiat et, dolorem sapiente harum nam debitis cumque odio similique exercitationem vel doloremque aspernatur hic natus nihil magni omnis. Quos, excepturi necessitatibus voluptas maxime enim vero sapiente minima fuga. Molestias ipsam praesentium cumque repellendus, architecto enim dicta vel quibusdam obcaecati voluptatem? Veniam, debitis voluptatem? Dolorum, nam. Mollitia, officia illo aut, nisi nulla odit ex tenetur commodi laborum ipsa consectetur inventore quod consequuntur voluptatum veritatis cumque hic nemo earum recusandae ratione repudiandae nostrum, tempora sapiente suscipit. Ipsum fugit dolore et? Facilis, quas. Qui neque quidem recusandae magni fugiat earum sit!</p>
+      
+      <div class="fichhtml">
+        
+          <h3>option tags</h3>
+
+         <div class="rare8HTML">
+          <input type="text" list="techs" />
+        <datalist id="techs">
+        <option value="HTML"></option>
+        <option value="CSS"></option>
+        <option value="JavaScript"></option>
+        <option value="React"></option>
+        <option value="Node"></option>
+        <option value="Angular"></option>
+        <option value="Vue"></option>
+        <option value="Svelte"></option>
+        </datalist>
+        </div>
+        
+        <div>
+          <p>H<sub>2</sub>O</p>
+          <p>E=MC<sup>2</sup></p>
+        </div>
+        
+        
+        
+        <div >
+          <details>
+            <summary>Do you want to open it?</summary>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt, cupiditate!</p>
+          </details>
+        </div>
+        
+        <div>
+          
+          <dialog>
+            <h2>Заголовок</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis voluptatem, mollitia quod eveniet nihil earum.</p>
+            
+          </dialog>
+        </div>
+        
+        <div>
+          <figure>
+          <img src="img/army43-44.jpg" alt="army" width="100%"/>
+          <figcaption>
+            Це зображення через теги figure і figcaption 
+          </figcaption> 
+          </figure>
+        </div>
+        <hr>
+        
+        <div>
+          <picture>
+            <source media="(min-width: 900px)" srcset="https://source.unsplash.com/random/400x400">
+            <source media="(min-width: 500px)" srcset="https://source.unsplash.com/random/100x100">
+            <img src="https://source.unsplash.com/random/200x200" alt="/"/>
+            <h4>Це зображення через теги picture і source  </h4>
+          </picture>
+         
+        </div>
+
+        <div>
+            <label >Чекбокс, вибір декількох позицій</label>
+            <input type="checkbox" name="klm"> 1
+            <input type="checkbox" name="klm"> 2
+            <input type="checkbox" name="klm"> 3
+            <input type="checkbox" name="klm"> 10+
+          </div>
+
+          <div>
+            <label >Радіо, вибір однієї позиції</label>
+            <input type="radio" name="abc"> 1
+            <input type="radio" name="abc"> 2
+            <input type="radio" name="abc"> 5
+            <input type="radio" name="abc"> 10+
+          </div>
+
+          <div  class="sex10">
+            <label for="sex10">Ваша стать</label>
+            <select id="sex10">
+              <option value="man">чоловік</option>
+              <option value="">жінка</option>
+              <option value="" selected>невизначився</option>
+            </select>
+          </div>
+
+          
+
+            <form  action="">
+              <div class="text02css" >
+              <label for="text02">Текст</label>
+              <input type="text" id="text02" value=" текст за замовчуванням " >
+            </div>
+          
+            <div class="text02acss" >
+              <label for="text02a"> Незмінний текст </label>
+              <input type="text" id="text02a" value="НЕЗМІННИЙ текст з  readonly" readonly>
+            </div>
+          
+          
+            <div class="email03css" >
+              <label for="email03">Пошта</label>
+              <input type="email" id="email03" placeholder=" підказка для вводу ">
+            </div>
+          
+            <div  class="pas04css">
+              <label for="pas04">Пароль</label>
+              <input type="password" id="pas04" >
+            </div>
+            
+            <div  class="num05css">
+              <label for="num05">Числа</label>
+              <input type="number" id="num05"  min="5"  max="18">
+            </div>
+          
+            <div  class="range06css">
+              <label for="range06">Діапазон</label>
+              <input type="range" id="range06"  min="0"  max="10"  step="2" >
+            </div>
+          
+            <div class="date07css" >
+              <label for="date07">Дата</label>
+              <input type="date" id="date07" >
+            </div>
+          
+            <div class="color08css" >
+              <label for="color08">Колір</label>
+              <input type="color" id="color08" >
+            </div>
+          
+            <div  class="message09css">
+              <label for="message09">Повідомлення</label>
+              <textarea name="" id="message09" cols="30" rows="5"></textarea>
+            </div>
+<h3>Таблиця</h3>
+            <table class="table" >                
+                <thead>
+                <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+              <td>C</td>
+              <td>a</td>
+              <td>b</td>
+              <td>c</td>
+              <td>d</td>
+            </tr>
+              <td>e</td>
+              <td>f</td>
+              <td>g</td>
+              <td>j</td>
+              <td>k</td>
+            </tr>
+              <td>l</td>
+              <td>m</td>
+              <td>n</td>
+              <td>o</td>
+              <td>p</td>
+            </tr>             
+          </tbody>
+              </table>
+
+      </div>
+      
+      
       <hr color="red" noshade width="600px">
       <footer class="footer">
         <div class="contacts">
